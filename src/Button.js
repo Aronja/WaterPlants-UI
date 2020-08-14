@@ -5,8 +5,11 @@ const buildUrl = (data) => {
 };
 
 const waterPlants = (data) => {
-  fetch(buildUrl(data))
-    .then(response => response.json());
+  fetch(buildUrl(data) ,{ headers : {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+       }})
+    .then(data => (console.log(data)));
 };
 
 const Button = (props) => {
