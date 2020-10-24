@@ -5,9 +5,13 @@ import Button from './Button.js'
 
 function App() {
   return (
-    <div className="App">
-      <h1>Plants</h1>
-      <Button text="WATER PLANTS" data="water"/>
+    <div>
+      <div className="App">
+        <h1>Plants</h1>
+        <Button text="WATER PLANTS" data="water" />
+        <p></p>
+        <Button text="check connection" data="" />
+      </div>
     </div>
   );
 }
